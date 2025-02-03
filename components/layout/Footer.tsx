@@ -62,7 +62,6 @@ const Footer = () => {
             </p>
             <ul className="text-black-500 space-y-2 text-center sm:text-left">
               {[
-                "LaslesVPN ?",
                 "FAQ",
                 "Tutorials",
                 "About Us",
