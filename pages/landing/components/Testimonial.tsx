@@ -5,7 +5,7 @@ import Image from "next/image";
 import Stars from "../icons/Stars";
 import ArrowBack from "../icons/ArrowBack";
 import ArrowNext from "../icons/ArrowNext";
-import { listTestimonial } from "../constants/listTestimonial";
+import { listTestimonial } from "../../../shared/constants/listTestimonial";
 import ScrollAnimationWrapper from "@/components/layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
 import getScrollAnimation from "@/utils/getScrollAnimation";

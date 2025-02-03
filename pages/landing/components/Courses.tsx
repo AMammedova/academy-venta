@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useMemo } from "react";
-import { courses } from "../constants/courses";
+import { courses } from "../../../shared/constants/courses";
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "@/components/layout/ScrollAnimationWrapper";
 import getScrollAnimation from "@/utils/getScrollAnimation";

@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { useMemo } from "react";
-import { listUser } from "../constants/listUser";
+import {listUser} from "../../../shared/constants/listUser";
+
 const Hero = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 

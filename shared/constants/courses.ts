@@ -1,3 +1,4 @@
+//courses.ts
 export const courses = [
   {
     title: "Human Resources Management",
