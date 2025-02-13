@@ -1,14 +1,18 @@
 "use client";
-import ButtonPrimary from "@/components/atoms/ButtonPrimary";
-import ScrollAnimationWrapper from "@/components/layout/ScrollAnimationWrapper";
+import ButtonPrimary from "@/shared/atoms/ButtonPrimary";
+import { listUser } from "@/shared/constants/listUser";
+import ScrollAnimationWrapper from "@/shared/layout/ScrollAnimationWrapper";
+import { HeroType } from "@/shared/types/HeroType";
 import getScrollAnimation from "@/utils/getScrollAnimation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { useMemo } from "react";
-import {listUser} from "../../../shared/constants/listUser";
 
-const Hero = () => {
+interface HeroProps {
+  t: HeroType;
+}
+const Hero = ({ t }: HeroProps) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -20,24 +24,19 @@ const Hero = () => {
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Müxtəlif Sahələrdə Peşəkar Biliklər əldə Edin
+              {t?.title}
             </h1>
-            <p className="text-black-500 mt-4 mb-6">
-              Are you ready to embark on an exciting journey into the world of
-              web development? Look no further! We are your trusted partner for
-              mastering the art of web development.
-            </p>
-            <ButtonPrimary>Kurslara Bax</ButtonPrimary>
+            <p className="text-black-500 mt-4 mb-6">{t?.description}</p>
+            <ButtonPrimary>{t?.button}</ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
               <Image
-                src="/images/Hero.svg"
+                src="/images/Girish 2.svg"
                 alt="VPN Illustrasi"
                 quality={100}
                 width={612}
                 height={383}
-                layout="responsive"
               />
             </motion.div>
           </div>
@@ -45,26 +44,30 @@ const Hero = () => {
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
-          {listUser.map((listUsers, index) => (
-            <motion.div
-              className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
-              key={index}
-              custom={{ duration: 2 + index }}
-              variants={scrollAnimation}
-            >
-              <div className="flex mx-auto w-40 sm:w-auto">
-                <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-                  {listUsers.icon}
-                </div>
-                <div className="flex flex-col">
-                  <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}+
-                  </p>
-                  <p className="text-lg text-black-500">{listUsers.name}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+          {listUser &&
+            listUser?.map((item, index) => {
+              const list = t?.list?.[index] ?? "";
+              return (
+                <motion.div
+                  className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+                  key={index}
+                  custom={{ duration: 2 + index }}
+                  variants={scrollAnimation}
+                >
+                  <div className="flex mx-auto w-40 sm:w-auto">
+                    <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+                      {item?.icon}
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="text-xl text-black-600 font-bold">
+                        {item?.number}+
+                      </p>
+                      <p className="text-lg text-black-500">{list}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
         </ScrollAnimationWrapper>
         <div
           className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"

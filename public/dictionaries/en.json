@@ -1,0 +1,115 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "feature": "Features",
+    "courses": "Courses",
+    "testimonial": "Testimonial",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "footer": {
+    "empowering": "Empowering futures through innovative education and expert mentorship.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "courses": "Courses",
+      "tutors": "Tutors",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "faq": "FAQ",
+      "contact": "Contact Us"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Sabunchu district, Bakikhanov settlement, B. Bunyadov 5X"
+    },
+    "rights": "All rights reserved."
+  },
+  "hero": {
+    "title": "Gain Professional Knowledge in Various Fields",
+    "description": "Venta Academy is an educational center that provides training with innovative approaches, preparing professionals for the real job market. Our goal is to help everyone reach their maximum potential.",
+    "button": "Apply Now",
+    "list": {
+      "0": "Participants",
+      "1": "Projects",
+      "2": "Instructors"
+    }
+  },
+  "feature": {
+    "title": "Our Advantages",
+    "description": "Venta Academy not only provides knowledge but also ensures students' integration into the business world. We offer internship programs for our graduates.",
+    "imageAlt": "Training Illustration",
+    "features": {
+      "0": "Professional Trainers: Each course is conducted by specialists in their respective fields.",
+      "1": "Opportunity to gain real work experience in companies",
+      "2": "Apply your knowledge in a professional environment",
+      "3": "Affordable Prices: High-quality education at reasonable prices.",
+      "4": "Career support and counseling"
+    }
+  },
+  "courses": {
+    "title": "Our Courses",
+    "description": "Venta Academy offers training in various fields, enabling both beginners and experienced professionals to enhance their knowledge.",
+    "viewCourse": "View Course"
+  },
+  "tutorsPage": {
+    "title": "Our Trainers"
+  },
+  "TutorDetail": {
+    "notFound": "Trainer not found",
+    "experience": "Experience",
+    "yearsOfExperience": "{years} years of experience",
+    "specialization": "Specialization",
+    "rating": "Rating",
+    "ratingValue": "{rating}/5",
+    "experienceAndActivities": "Experience and Activities"
+  },
+  "testimonial": {
+    "title": "Testimonials",
+    "description": "This page showcases the testimonials of our students who have benefited from our training programs."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have some big idea or brand to develop and need help? Then reach out—we'd love to hear about your project and provide help.",
+    "email": "info@example.com",
+    "phone": "+158 996 888",
+    "address": "Sabunchu district, Bakikhanov settlement, B. Bunyadov 5X",
+    "form": {
+      "interested": "I'm interested in...",
+      "options": {
+        "hrManagement": "HR Management",
+        "digitalMarketing": "Sales training",
+        "frontendDevelopment": "Frontend Development",
+        "backendDevelopment": "Backend Development",
+        "turism": "Tourism training"
+      },
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "communicationMethod": "Preferred method of communication",
+      "emailOption": "Email",
+      "phoneOption": "Phone",
+      "message": "Message",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Message sent successfully!",
+      "errorMessage": "An error occurred while sending the message!",
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailInvalid": "Email is invalid",
+        "emailRequired": "Email is required",
+        "phoneInvalid": "Phone number is invalid",
+        "phoneRequired": "Phone number is required",
+        "messageMinLength": "Message is too short",
+        "messageRequired": "Message is required"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "description": "Frequently asked questions and answers"
+  }
+}

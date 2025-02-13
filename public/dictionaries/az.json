@@ -1,0 +1,114 @@
+{
+  "header": {
+    "about": "Haqqımızda",
+    "feature": "Xüsusiyyətlər",
+    "courses": "Kurslar",
+    "testimonial": "Rəylər",
+    "signUp": "Qeydiyyat"
+  },
+  "footer": {
+    "empowering": "İnnovativ təhsil və peşəkar mentorluq vasitəsilə gələcəyi gücləndiririk.",
+    "quickLinks": {
+      "title": "Sürətli Keçidlər",
+      "about": "Haqqımızda",
+      "courses": "Kurslar",
+      "tutors": "Müəllimlər",
+      "blog": "Bloq"
+    },
+    "support": {
+      "title": "Dəstək",
+      "faq": "FAQ",
+      "contact": "Əlaqə"
+    },
+    "contact": {
+      "title": "Əlaqə",
+      "address": "Sabunçu rayon, Bakıxanov qəsəbəsi, B. Bünyadov 5X"
+    },
+    "rights": "Bütün hüquqlar qorunur."
+  },
+
+  "hero": {
+    "title": "Müxtəlif Sahələrdə Peşəkar Biliklər əldə Edin",
+    "description": "Venta Academy – innovativ yanaşmalarla təhsil verən, real iş bazarına uyğun peşəkar kadrlar hazırlayan tədris mərkəzidir. Məqsədimiz hər kəsin potensialını maksimum dərəcədə inkişaf etdirməsinə kömək etməkdir.",
+    "button": "Müraciət et",
+    "list": {
+      "0": "İştirakçı",
+      "1": "Layihə",
+      "2": "Müəllim"
+    }
+  },
+  "feature": {
+    "title": "Üstünlüklərimiz",
+    "description": "Venta Academy tələbələrə yalnız bilik vermir, həm də onların iş dünyasına inteqrasiyasını təmin edir. Təlimlərimizi bitirən tələbələr üçün təcrübə proqramları təklif edirik.",
+    "features": {
+      "0": "Peşəkar Təlimçilər: Hər bir kurs sahəsində ixtisaslaşmış təlimçilər tərəfindən keçirilir.",
+      "1": "Şirkətlərdə real iş təcrübəsi qazanmaq imkanı",
+      "2": "Peşəkar mühitdə biliklərinizi tətbiq etmək",
+      "3": "Əlçatan Qiymətlər: Yüksək keyfiyyətli təhsil üçün münasib qiymətlər.",
+      "4": "Karyera dəstəyi və məsləhət"
+    }
+  },
+  "courses": {
+    "title": "Təlimlərimiz",
+    "description": "Venta Academy müxtəlif sahələr üzrə təlimlər tədris edərək, həm yeni başlayanlara, həm də təcrübəli mütəxəssislərə biliklərini artırmaq imkanı yaradır.",
+    "viewCourse": "Tədrisə bax"
+  },
+  "tutorsPage": {
+    "title": "Təlimçilərimiz"
+  },
+  "TutorDetail": {
+    "notFound": "Təlimçi tapılmadı",
+    "experience": "Təcrübə",
+    "yearsOfExperience": "{years} illik təcrübə",
+    "specialization": "İxtisas",
+    "rating": "Reytinq",
+    "ratingValue": "{rating}/5",
+    "experienceAndActivities": "Təcrübə və Fəaliyyət"
+  },
+  "testimonial": {
+    "title": "Yüzlərlə Məmnun Tələbənin Etibarı",
+    "description": "Bu bölmədə bizim platformadan istifadə edən tələbələrin şərhləri və təcrübələri ilə tanış olun."
+  },
+
+  "contact": {
+    "title": "Bizimlə Əlaqə",
+    "description": "Böyük ideyanız və ya inkişaf etdirmək istədiyiniz layihəniz var və köməyə ehtiyacınız var? Bizimlə əlaqə saxlayın, layihəniz haqqında məlumat almaqdan və kömək göstərməkdən məmnun olarıq.",
+    "email": "info@example.com",
+    "phone": "+158 996 888",
+    "address": "Sabunçu rayon, Bakıxanov qəsəbəsi, B. Bünyadov 5X",
+    "form": {
+      "interested": "Maraqlandığım sahə...",
+      "options": {
+        "hrManagement": "HR idarəetməsi",
+        "digitalMarketing": "Satış təlimi",
+        "frontendDevelopment": "Frontend təlimi",
+        "backendDevelopment": "Backend təlimi",
+        "turism": "Turizim təlimi"
+      },
+      "name": "Ad",
+      "email": "Email",
+      "phone": "Telefon",
+      "communicationMethod": "Üstünlük verdiyiniz əlaqə üsulu",
+      "emailOption": "Email",
+      "phoneOption": "Telefon",
+      "message": "Mesaj",
+      "sendMessage": "Mesaj Göndər",
+      "sending": "Göndərilir...",
+      "successMessage": "Mesaj uğurla göndərildi!",
+      "errorMessage": "Mesaj göndərilərkən xəta baş verdi!",
+      "errors": {
+        "nameRequired": "Ad daxil edilməlidir",
+        "emailInvalid": "Email etibarlı deyil",
+        "emailRequired": "Email daxil edilməlidir",
+        "phoneInvalid": "Telefon nömrəsi etibarlı deyil",
+        "phoneRequired": "Telefon nömrəsi daxil edilməlidir",
+        "messageMinLength": "Mesaj çox qısadır",
+        "messageRequired": "Mesaj daxil edilməlidir"
+      }
+    }
+  },
+  "faq": {
+    "title": " Tez-tez verilən suallar",
+    "description": "Ən çox verilən suallar və cavabları"
+  }
+}

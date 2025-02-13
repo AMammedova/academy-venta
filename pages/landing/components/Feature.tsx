@@ -3,18 +3,17 @@ import Image from "next/image";
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "@/utils/getScrollAnimation";
-import ScrollAnimationWrapper from "@/components/layout/ScrollAnimationWrapper";
+import ScrollAnimationWrapper from "@/shared/layout/ScrollAnimationWrapper";
+import { FeatureType } from "@/shared/types/FeatureType";
 
-const features = [
-  "Peşəkar Təlimçilər: Hər bir kurs sahəsində ixtisaslaşmış təlimçilər tərəfindən keçirilir.",
-  "Sertifikatlaşdırılmış Kurslar: Təlimlərimiz beynəlxalq standartlara uyğun və sertifikatlaşdırılmışdır.",
-  "Əyani və Onlayn İmkanlar: Təlimlərə həm əyani, həm də onlayn qoşulma imkanı mövcuddur.",
-  "Əlçatan Qiymətlər: Yüksək keyfiyyətli təhsil üçün münasib qiymətlər.",
-];
 
-const Feature = () => {
+
+interface FeatureProps {
+  t: FeatureType;
+}
+const Feature = ({ t }: FeatureProps) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
+  const featuresCount = 5;
   return (
     <div
       className="max-w-screen-xl mt-8 lg:mt-20 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
@@ -24,7 +23,7 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/images/Feature2.svg"
+              src="/images/üstünlükler.svg"
               alt="Təlimlər Illustrasiyası"
               layout="responsive"
               quality={100}
@@ -39,29 +38,29 @@ const Feature = () => {
             variants={scrollAnimation}
           >
             <h3 className="text-3xl text-start lg:text-4xl font-medium leading-relaxed text-black-600 ">
-              Üstünlüklərimiz
+              {t?.title}
             </h3>
-            <p className="my-2 text-black-500">
-              Siz bizdən müxtəlif sahələr üzrə yüksək keyfiyyətli təlimlər əldə
-              edə bilərsiniz
-            </p>
+            <p className="my-2 text-black-500">{t?.description}</p>
             <ul className="text-black-500 self-start list-inside ml-8">
-              {features.map((feature, index) => (
-                <motion.li
-                  className="relative circle-check custom-list my-4 cursor-pointer"
-                  custom={{ duration: 2 + index }}
-                  variants={scrollAnimation}
-                  key={feature}
-                  whileHover={{
-                    scale: 1.1,
-                    transition: {
-                      duration: 0.2,
-                    },
-                  }}
-                >
-                  {feature}
-                </motion.li>
-              ))}
+              {[...Array(featuresCount)]?.map((_, index) => {
+                const feature = t?.features?.[index] || "";
+                return (
+                  <motion.li
+                    className="relative circle-check custom-list my-4 cursor-pointer"
+                    custom={{ duration: 2 + index }}
+                    variants={scrollAnimation}
+                    key={index}
+                    whileHover={{
+                      scale: 1.1,
+                      transition: {
+                        duration: 0.2,
+                      },
+                    }}
+                  >
+                    {feature}
+                  </motion.li>
+                );
+              })}
             </ul>
           </motion.div>
         </ScrollAnimationWrapper>
